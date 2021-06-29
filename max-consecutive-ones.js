@@ -1,4 +1,4 @@
-// Array 1
+// Array 문제 1 : Introduction Max Consecutive Ones
 // Given a binary array nums, return the maximum number of consecutive 1's in the array.
 // 1 <= nums.length <= 105
 // nums[i] is either 0 or 1.
@@ -29,6 +29,7 @@ var findMaxConsecutiveOnes1 = function (nums) {
 
   return Math.max(...consecutiveZero);
 
+  // 실행 결과
   // Your runtime beats 26.24 % of javascript submission
   // 42 / 42 test cases passed.
   // Status: Accepted
@@ -42,6 +43,7 @@ var findMaxConsecutiveOnes2 = function(nums) {
   const consecutiveOnes = nums.toString().replace(/,/g, '').split('0');
   return consecutiveOnes.sort().pop().length;
 
+  // 실행 결과
   // Your runtime beats 17.21 % of javascript submissions
   // 42 / 42 test cases passed.
   // Status: Accepted
